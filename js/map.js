@@ -1,5 +1,4 @@
 // JavaScript Document
-//<script> 
     
         var width = 960,
             height = 600;
@@ -23,10 +22,10 @@
     
         d3.csv("data/ChildrenNotAttendingPreschool.csv", function(data) {
             //console.log(data);
-            /*color.domain([
+            color.domain([
                     d3.min(data, function(d) { return +d.PercentChange0512; }),
                     d3.max(data, function(d) { return +d.PercentChange0512; })
-            ]);*/
+            ]);
     
     
             d3.json("data/us-states.json", function(json) {
@@ -43,7 +42,7 @@
                     //Grab data value, and convert from string to float
                     var dataValue = parseFloat(data[i].PercentChange0512);
                     //console.log(dataValue);
-    
+					
                     //Find the corresponding state inside the GeoJSON
                     for (var j = 0; j < json.features.length; j++) {
                         //console.log(json.features)
@@ -56,10 +55,11 @@
     
                             //Copy the data value into the JSON
                             json.features[j].properties.value = dataValue;
-    
+    						
+							
                             //Stop looking through the JSON
                             break;
-    
+							
                         }
     
                     }
@@ -129,4 +129,4 @@
             
     
     
-        //</script>
+        
