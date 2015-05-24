@@ -17,4 +17,14 @@ path.hover{
 }
 .contentBox{
 	display:inline;
+	width:40%;
+}
+.mapBox{
+	width:60%;
+}
+.floatLeft{
+	float:left;
+}
+.floatRight{
+	float:right;
 }
