@@ -1,3 +1,20 @@
 @charset "UTF-8";
 /* CSS Document */
 
+body{
+	
+}
+
+path{
+	stroke:#333333;
+	stroke-width: 1px;
+	
+}
+path.hover{
+	
+	stroke:#ED0606;
+	stroke-width:2px;
+}
+.contentBox{
+	display:inline;
+}
