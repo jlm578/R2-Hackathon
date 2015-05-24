@@ -5,27 +5,12 @@
 <title>AECF Kids Count Annual Report</title>
 		<link href='http://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900' rel='stylesheet' type='text/css'>
-		<link href="css/AECF.css" rel="stylesheet" type="text/css">
+		<link href="css/aecf.css" rel="stylesheet" type="text/css">
         
         <link href='http://fonts.googleapis.com/css?family=Stardos+Stencil|Libre+Baskerville:400,400italic,700|Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 		<!-- 1. Add these JavaScript inclusions in the head of your page -->
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<!--<script type="text/javascript" src="http://code.highcharts.com/highcharts.js"></script>
-        <script type="text/javascript" src="http://code.highcharts.com/highcharts-more.js"></script>
-		<script src="http://code.highcharts.com/modules/data.js"></script>
-		<script src="http://code.highcharts.com/modules/exporting.js"></script>
-        <script src="http://code.highcharts.com/modules/drilldown.js"></script>
-		<script src="highcharts-regression-master/highcharts-regression.js"></script>-->
-        
-        
-        <!--HighMaps links-->
-        <!--<script type="text/javascript" src="http://code.highcharts.com/maps/highmaps.js"></script>
-        <script type="text/javascript" src="http://code.highcharts.com/maps/highmaps.src.js"></script>
-        <script type="text/javascript" src="http://code.highcharts.com/maps/modules/map.js"></script>
-        <script type="text/javascript" src="http://code.highcharts.com/maps/modules/map.src.js"></script>
-        <script type="text/javascript" src="http://code.highcharts.com/maps/modules/exporting.js"></script>
-        <script type="text/javascript" src="http://code.highcharts.com/maps/modules/exporting.src.js"></script>
-        <script type="text/javascript" src="http://code.highcharts.com/mapdata/countries/us/us-all.js"></script>-->
+		<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+	
         
 		<script type="text/javascript" src="http://mbostock.github.com/d3/d3.js"></script>
         <script type="text/javascript" src="http://d3js.org/topojson.v1.min.js"></script>
@@ -41,20 +26,9 @@
 <body>
 	
     <h1>Kids Count Annual Report - Concept</h1>
-    <div class="container">
-	<div class="overall">
-        <!--<h2>What is STEM?</h2>
-        <p>STEM stands for Science, Technology, Engineering, and Math. Within the United States, there is a signficant focus on increasing our world rank in STEM education and employment. One of the focuses within STEM is to increase the numbers of women and minorities in STEM fields.</p> -->
-    	
-        <div class="categoriesExplain floatLeft">
-            <h2>What is Kids Count?</h2>
-            <p>Kids Count is </p>
-            <h2>Map Header</h2>
-            <p>Loreum ipsum</p>
-       </div>
-       
-       <div class="input floatRight">
-		<div id="chart"></div>
+	<div>
+    
+    <div id="chart"></div>
 
     <script> 
 
@@ -69,11 +43,11 @@
 
     
     var color = d3.scale.quantize()
-       .range(["rgb(240,230,200)","rgb(240,215,140)","rgb(240,205,80)","rgb(220,175,45)","rgb(200,155,5)"]);  
+       .range(["rgb(230,97,1)","rgb(253,184,99)","rgb(247,247,247)","rgb(178,171,210)","rgb(94,60,153)"]);  
      
 
 
-    d3.csv("/data/ChildrenNotAttendingPreschool.csv", function(data) {
+    d3.csv("data/ChildrenNotAttendingPreschool.csv", function(data) {
         //console.log(data);
         color.domain([
                 d3.min(data, function(d) { return +d.PercentChange0512; }),
@@ -81,7 +55,7 @@
         ]);
 
 
-        d3.json("/sandbox/data/us-states.json", function(json) {
+        d3.json("data/us-states.json", function(json) {
             //console.log(json);
 
             //Merge the ag. data and GeoJSON
@@ -89,7 +63,7 @@
             for (var i = 0; i < data.length; i++) {
 
                 //Grab state name
-                var dataState = data[i].StateName;
+                var dataState = data[i].name;
                 //console.log(dataState);
 
                 //Grab data value, and convert from string to float
@@ -144,10 +118,7 @@
 
 
     </script>
-        
-        
-        
-    	</div>
+   	</div>
     <div style="height:50px; clear:both">&nbsp;</div>
     
 
