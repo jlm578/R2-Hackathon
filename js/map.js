@@ -15,7 +15,7 @@
          
     	var stateContent = function(stateInfo){
 			console.log(stateInfo);
-			d3.select(".contentBox").html("<h1>"+ stateInfo.name + "</h1>");
+			d3.select(".contentBox").html("<h1>"+ stateInfo.name + stateInfo.desc + "</h1>");
 			//d3.select(".contentBox .stateLaws").text("askdaskdjaks");
 		};
 		
@@ -43,6 +43,11 @@
                     var dataValue = parseFloat(data[i].PercentChange0512);
                     //console.log(dataValue);
 					
+					//Grab data description
+					//var dataDescription = parseFloat(data[i].StateDescription);
+					var dataDescription = data[i].stateDesc;
+					//console.log(dataDescription);
+					
                     //Find the corresponding state inside the GeoJSON
                     for (var j = 0; j < json.features.length; j++) {
                         //console.log(json.features)
@@ -55,7 +60,7 @@
     
                             //Copy the data value into the JSON
                             json.features[j].properties.value = dataValue;
-    						
+    						json.features[j].properties.desc = dataDescription;
 							
                             //Stop looking through the JSON
                             break;
