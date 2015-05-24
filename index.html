@@ -101,13 +101,35 @@
                     //Get data value
                     var value = d.properties.value;
 
-                    if (value) {
+                    if ((value > 0) && (value < 5)) {
                         console.log(value)
                             //If value exists…
-                            return color(value);
-                    } else {
+                            //return color(value);
+							return "#fdb863";
+                    } if ((value < 0) && (value > -5)) {
+                        console.log(value)
+                            //If value exists…
+                            //return color(value);
+							return "#e66101";
+                    } if ((value < -6) && (value > -10)) {
+                        console.log(value)
+                            //If value exists…
+                            //return color(value);
+							return "#b2abd2";
+                    } if (value < -11) {
+                        console.log(value)
+                            //If value exists…
+                            //return color(value);
+							return "#333333";
+                    } if (value = 0) {
+                        console.log(value)
+                            //If value exists…
+                            //return color(value);
+							return "#ffffff";
+                    }
+					else {
                             //If value is undefined…
-                            return "#EEE";
+                            return "#f0f0f0";
                     }
                });
            }
