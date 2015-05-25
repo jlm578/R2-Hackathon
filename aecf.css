@@ -5,7 +5,7 @@ body{
 	width:100%;
 				/*margin:40px;*/
 				margin: auto;
-				font-family: 'Maven Pro', sans-serif;			
+				font-family: 'Arial', sans-serif;			
 }
 .header{
 	width:100%;
@@ -19,7 +19,7 @@ body{
 }
 .title{
 	margin-top:0%;
-	font-family: 'Maven Pro', sans-serif;
+	font-family: 'Arial', sans-serif;
 	color:#ffffff;
 	font-size:72px;
 	text-align:center;
@@ -48,7 +48,7 @@ path.hover{
 	display:inline;
 	width:40%;
 }
-.stateLaws, .stateConcerns, .stateName, .statePercent{
+.stateLaws, .stateConcerns, .stateName, .statePercent, .totalChildPop, .notAttendPSNum, .notAttendPSPerc{
 	display:inline;
 }
 .mapBox{
