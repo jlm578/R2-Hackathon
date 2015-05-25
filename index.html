@@ -14,24 +14,72 @@
         
 		<script type="text/javascript" src="http://mbostock.github.com/d3/d3.js"></script>
         <script type="text/javascript" src="http://d3js.org/topojson.v1.min.js"></script>
-        <script src="http://d3js.org/queue.v1.min.js"></script>
+        <script src="http://d3js.org/queue.v1.min.js"></script> 
         
         
-        
-        
-        
-        
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" src="http://code.highcharts.com/highcharts.js"></script>
+        <script src="js/nationalLandscape.js"></script>
 </head>
 
 <body>
-	
-    <h1>Kids Count Annual Report - Concept</h1>
-	<div class="mapBox floatLeft">
-        <div id="chart"></div>
-    	<script src="js/map.js"></script>
-   	</div>
-    <div class="contentBox floatRight">
-    	<h2>National Data Here</h2>  
+	<div class="header"></div>
+    <div class="title shadow">
+    		Kids Count - Indicator View
+        </div>
+    <!--<div id="nav">   
+        <a href="#" title="Domain 1">Indicator 1</a> - | - 
+        <a href="#" title="Domain 2">Indicator 2</a> - | - 
+        <a href="#" title="Domain 3">Indicator 3</a> - | -
+        <a href="#" title="Domain 4">Indicator 4</a>
+    </div>-->
+	<div class="containerBox">
+    	
+            <div class="explainContent floatLeft">
+                <h2>National Landscape for Education</h2>
+                <p>This is the text for the national landscape for education. </p>
+            </div>        
+            <div class="nationalLandscapeChart floatRight marginRight">
+                <div id="nationalLandscape" style="width: 100%; height: 100%; margin: 0 auto"></div>
+                
+            </div>
+       
+       <div class="clear" style="border-top:2px dashed #333333"></div>
+        
+        
+        <div class="mapBox floatRight">
+            <div id="chart"></div>
+            <script src="js/map.js"></script>
+        </div>
+        <!--<div class="contentBox floatLeft">
+            <h2>National Data Here</h2> 
+            <p class="stateLaws"></p> 
+            <p class="stateConcerns"></p>
+        </div>-->
+        
+        <div class="contentBox floatLeft">
+            <h2>State: <span class="stateName"></span></h2>
+            <h3>Basic Information</h3>
+            <ul>
+                <li>National Average Change: -4%</li>
+                <li>State Average: <span class="statePercent"></span>%</li>
+                <li>Current Population: ****</li>
+                <li>Current Children Population: ****</li>
+                <li>Current Number of Children for Indicator: ****</li>
+                <li>Indicator %: *****</li>
+            </ul>
+            <h3>What are the state demographics?</h3>
+            <p>INSERT RACIAL CHART</p>
+            <h3>What are the biggest concerns?</h3>
+            <p class="stateConcerns"></p>
+            <h3>What has worked?</h3>
+            <p>Text here</p>
+            <h3>What laws or programs have been passed?</h3>
+            <p class="stateLaws">Text Here</p>
+            <h3>What pending legislation exists</h3>
+            <p>Text here</p>
+            
+        </div>
     </div>
     <div style="height:50px; clear:both">&nbsp;</div>
 

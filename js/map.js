@@ -15,8 +15,11 @@
          
     	var stateContent = function(stateInfo){
 			console.log(stateInfo);
-			d3.select(".contentBox").html("<h1>"+ stateInfo.name + stateInfo.desc + "</h1>");
-			//d3.select(".contentBox .stateLaws").text("askdaskdjaks");
+			//d3.select(".contentBox").html("<h1>"+ stateInfo.name + "</h1> <br/><p>" + stateInfo.desc + "</p>");
+			d3.select(".contentBox .stateName").text(stateInfo.name);
+			d3.select(".contentBox .statePercent").text(stateInfo.value);
+			d3.select(".contentBox .stateLaws").text("This is the state law information");
+			d3.select(".contentBox .stateConcerns").text("This is the state concerns info");
 		};
 		
     
@@ -96,27 +99,27 @@
                         //Get data value
                         var value = d.properties.value;
     
-                        if ((value > 0) && (value < 5)) {
+                        if ((value > 0) && (value <= 5)) {
                             console.log(value)
                                 //If value exists…
                                 //return color(value);
-                                return "#fdb863";
-                        } if ((value < 0) && (value > -5)) {
+                                return "#998ec3";
+                        } if ((value < 0) && (value >= -5)) {
                             console.log(value)
                                 //If value exists…
                                 //return color(value);
-                                return "#e66101";
-                        } if ((value < -6) && (value > -10)) {
+                                return "#fee0b6";
+                        } if ((value <= -6) && (value >= -10)) {
                             console.log(value)
                                 //If value exists…
                                 //return color(value);
-                                return "#b2abd2";
-                        } if (value < -11) {
+                                return "#f1a340";
+                        } if (value <= -11) {
                             console.log(value)
                                 //If value exists…
                                 //return color(value);
-                                return "#333333";
-                        } if (value = 0) {
+                                return "#b35806";
+                        } if (value == 0) {
                             console.log(value)
                                 //If value exists…
                                 //return color(value);
@@ -124,7 +127,7 @@
                         }
                         else {
                                 //If value is undefined…
-                                return "#f0f0f0";
+                                return "#333333";
                         }
                    });
                }

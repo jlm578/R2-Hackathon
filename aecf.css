@@ -2,9 +2,38 @@
 /* CSS Document */
 
 body{
-	
+	width:100%;
+				/*margin:40px;*/
+				margin: auto;
+				font-family: 'Maven Pro', sans-serif;			
+}
+.header{
+	width:100%;
+	height:275px;
+	/*margin: 18% 8% 0% 8%;*/
+	background-image:url(images/banner.jpg);
+	background-size:100% auto;
+	/*background-size:100% 100%;*/
+	background-repeat:no-repeat;
+	background-position: center top;
+}
+.title{
+	margin-top:0%;
+	font-family: 'Maven Pro', sans-serif;
+	color:#ffffff;
+	font-size:72px;
+	text-align:center;
+	width:auto;
+	background-color:#333333;
+	clear:both;
+	/*background-color:#7E5590;*/
 }
 
+.shadow {
+	-moz-box-shadow: 3px 3px 4px #000;
+	-webkit-box-shadow: 3px 3px 4px #000;
+	box-shadow: 3px 3px 4px #000;
+}
 path{
 	stroke:#333333;
 	stroke-width: 1px;
@@ -19,6 +48,9 @@ path.hover{
 	display:inline;
 	width:40%;
 }
+.stateLaws, .stateConcerns, .stateName, .statePercent{
+	display:inline;
+}
 .mapBox{
 	width:60%;
 }
@@ -28,3 +60,60 @@ path.hover{
 .floatRight{
 	float:right;
 }
+div#nav{
+	font-weight: bold;
+	width:99%;
+	/*margin:222px 0 0 0;*/
+	/*margin:240px 0 0 0;*/
+	padding:5px;
+	text-align:center;
+	color:#333;
+	/*background-color:#69C;*/
+}
+div#nav a{
+	padding:5px;
+	color:#333;
+	
+}
+div#nav a:hover{
+	padding:5px;
+	color:#fff;
+	/*background-color:#6CC; */
+	background-color:#e2c57e;
+	border-bottom:3px solid #333;
+	text-decoration:none;
+}
+div.nav a:after { 
+	 color:#333;
+}
+div.nav a:hover{ 
+	color:#333;
+}
+
+div.explainContent{
+	width:25%;
+	padding:0 5px 5px 5px;
+	margin-top:15px;
+}
+div.nationalLandscapeChart{
+/*width:23%;*/
+				width:70%;
+				/*border:1px dotted #333333;*/
+				padding: 0;
+				margin-bottom:25px;
+				margin-top:15px;
+				/*height:300px;*/
+				/*border:2px solid #333333;*/
+			}
+			
+			.marginRight{
+				/*margin-right:15px;*/
+				margin-right:10px;
+			}
+			.clear{
+				clear:both;
+			}
+			div.containerBox{
+				width:90%;
+				margin:30px auto;
+			}
