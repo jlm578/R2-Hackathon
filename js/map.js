@@ -20,6 +20,9 @@
 			d3.select(".contentBox .statePercent").text(stateInfo.value);
 			d3.select(".contentBox .stateLaws").text("This is the state law information");
 			d3.select(".contentBox .stateConcerns").text("This is the state concerns info");
+			d3.select(".contentBox .notAttendPSNum").text(stateInfo.notAttendNum);
+			d3.select(".contentBox .notAttendPSPerc").text(stateInfo.notAttendPerc);
+			d3.select(".contentBox .totalChildPop").text(stateInfo.totalPop);
 		};
 		
     
@@ -51,6 +54,11 @@
 					var dataDescription = data[i].stateDesc;
 					//console.log(dataDescription);
 					
+					//Get Child Population Information
+					var childNotAttendNum = data[i].childPop2010NotAttendPS;
+					var childNotAttendPerc = data[i].percentChildPop2010NotAttendPS;
+					var childPopTotal = data[i].totalChildPop2010;
+					
                     //Find the corresponding state inside the GeoJSON
                     for (var j = 0; j < json.features.length; j++) {
                         //console.log(json.features)
@@ -64,6 +72,11 @@
                             //Copy the data value into the JSON
                             json.features[j].properties.value = dataValue;
     						json.features[j].properties.desc = dataDescription;
+							
+							//Add child pop data to json
+							json.features[j].properties.notAttendNum = childNotAttendNum;
+							json.features[j].properties.notAttendPerc = childNotAttendPerc;
+							json.features[j].properties.totalPop = childPopTotal;
 							
                             //Stop looking through the JSON
                             break;
