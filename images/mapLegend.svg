@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 792 612" enable-background="new 0 0 792 612" xml:space="preserve">
+<rect x="27.1" y="154.3" fill="#B25A27" stroke="#414042" stroke-width="0.5" width="10.8" height="10.8"/>
+<rect x="27.1" y="165" fill="#F1A33F" stroke="#414042" stroke-width="0.5" width="10.8" height="10.8"/>
+<rect x="27.1" y="175.8" fill="#FEE0B6" stroke="#414042" stroke-width="0.5" width="10.8" height="10.8"/>
+<rect x="39.2" y="156.8" fill="none" width="78.5" height="10.8"/>
+<text transform="matrix(1 0 0 1 39.2241 163.2164)" font-family="'ArialMT'" font-size="9">Change &lt; -11</text>
+<rect x="39.2" y="167.1" fill="none" width="95.8" height="10.8"/>
+<text transform="matrix(1 0 0 1 39.2241 173.5164)" font-family="'ArialMT'" font-size="9">-10 &lt; Change &lt; -6</text>
+<rect x="39.2" y="177.9" fill="none" width="95.8" height="10.8"/>
+<text transform="matrix(1 0 0 1 39.2241 184.3164)" font-family="'ArialMT'" font-size="9">-5 &lt; Change &lt; 0</text>
+<rect x="27.4" y="137.7" fill="none" width="161.4" height="23.2"/>
+<text transform="matrix(1 0 0 1 27.4355 144.1638)" font-family="'ArialMT'" font-size="9">Legend </text>
+<rect x="22.6" y="132.8" fill="none" width="112.5" height="92.6"/>
+<rect x="27.1" y="186.6" fill="#FFFFFF" stroke="#414042" stroke-width="0.5" width="10.8" height="10.8"/>
+<rect x="39.2" y="188.7" fill="none" width="95.8" height="10.8"/>
+<text transform="matrix(1 0 0 1 39.2241 195.1164)" font-family="'ArialMT'" font-size="9">Change = 0</text>
+<rect x="27.1" y="197.4" fill="#988EC3" stroke="#414042" stroke-width="0.5" width="10.8" height="10.8"/>
+<rect x="39.2" y="199.5" fill="none" width="95.8" height="10.8"/>
+<text transform="matrix(1 0 0 1 39.2241 205.9164)" font-family="'ArialMT'" font-size="9">0 &lt; Change &lt; 5</text>
+<rect x="27.1" y="208.2" fill="#542D87" stroke="#414042" stroke-width="0.5" width="10.8" height="10.8"/>
+<rect x="39.2" y="210.3" fill="none" width="95.8" height="10.8"/>
+<text transform="matrix(1 0 0 1 39.2241 216.7682)" font-family="'ArialMT'" font-size="9">Change &gt; 5</text>
+</svg>

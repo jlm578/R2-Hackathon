@@ -46,14 +46,18 @@ path.hover{
 }
 .contentBox{
 	display:inline;
-	width:40%;
+	width:38%;
 	margin-top:15px;
+	/*border-right: 1px dashed #333333;*/
+}
+.legend{
+	margin-top:-180px;
 }
 .stateLaws, .stateConcerns, .stateName, .statePercent, .totalChildPop, .notAttendPSNum, .notAttendPSPerc{
 	display:inline;
 }
 .mapBox{
-	width:60%;
+	width:61%;
 	margin-top:45px;
 }
 .floatLeft{
@@ -93,6 +97,7 @@ div.nav a:hover{
 }
 div#racialBreakout{
 	width:70%;
+	margin-left:-15px;
 }
 div.explainContent{
 	width:25%;
